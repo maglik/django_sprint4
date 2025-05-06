@@ -60,6 +60,7 @@ class Post(BaseModel):
                               blank=True)
 
     class Meta:
+        ordering = ['-pub_date']
         verbose_name = 'публикация'
         verbose_name_plural = 'Публикации'
 
